@@ -9,5 +9,5 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-    - uses: docker://foo:bar@alpine
+    - uses: docker://mcr.microsoft.com/dotnet/core/samples:dotnetapp
       
