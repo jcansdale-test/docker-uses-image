@@ -1,5 +1,3 @@
-name: CI
-
 on:
   push:
   pull_request:
@@ -7,8 +5,8 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
-
     steps:
     - uses: docker://alpine
       with:
-        args: echo Hello, World!
+        args: echo Hello, Docker!
+    - run: echo Hello, Bash!
