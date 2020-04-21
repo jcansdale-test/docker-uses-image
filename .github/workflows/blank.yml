@@ -9,9 +9,7 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-    - uses: docker://mcr.microsoft.com/dotnet/core/samples:dotnetapp
+    - uses: docker://mcr.microsoft.com/dotnet/core/samples:dotnetapp      
       env:
-        bish: bash
-      with:
-        foo: bar
-      
+        PWD: /app
+
