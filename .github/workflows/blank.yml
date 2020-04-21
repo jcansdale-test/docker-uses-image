@@ -10,6 +10,5 @@ jobs:
 
     steps:
     - uses: docker://mcr.microsoft.com/dotnet/core/samples:dotnetapp      
-      env:
-        PWD: /app
-
+      entrypoint: /app/dotnet
+      args: foo
