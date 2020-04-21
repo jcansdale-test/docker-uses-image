@@ -11,5 +11,4 @@ jobs:
     steps:
     - uses: docker://mcr.microsoft.com/dotnet/core/samples:dotnetapp
       with:
-        entrypoint: /app/dotnet
-        args: dotnetapp.dll
+        workdir: /app
